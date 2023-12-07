@@ -11,15 +11,15 @@ I am not sure why exactly, but it seems to consistently fail with Rider 2023.3.
 ## Images
 ### Rider 2023.2.3
 With mock injection, the output displays correct.
-![](images/Rider2023-2-3_with_mock.png)
+![](Images/Rider2023-2-3_with_mock.png)
 
 Without mock injection, the output also displays correct.
-![](images/Rider2023-2-3_without_mock.png)
+![](Images/Rider2023-2-3_without_mock.png)
 
 ## Images
 ### Rider 2023.3
 With mock injection, the output does **NOT** displays correct.
-![](images/Rider2023-3_with_mock.png)
+![](Images/Rider2023-3_with_mock.png)
 
 Without mock injection, the output **DOES** displays correct.
-![](images/Rider2023-3_without_mock.png)
+![](Images/Rider2023-3_without_mock.png)
