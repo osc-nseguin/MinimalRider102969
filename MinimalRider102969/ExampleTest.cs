@@ -1,19 +1,18 @@
-﻿using Moq;
-using Xunit;
+﻿using Xunit;
 
 namespace MinimalRider102969;
 
 public class ExampleTestClass
 {
     [Theory]
-    [AutoMoqData]
-    public void ExampleFailingTestWithNoOutput(Mock<IList<string>> listMock, string message)
+    [AutoFakeData]
+    public void ExampleFailingTestWithNoOutput(IList<string> listMock, string message)
     {
         throw new Exception($"This will fail: {message}");
     }
     
     [Theory]
-    [AutoMoqData]
+    [AutoFakeData]
     public void ExampleFailingTestWithOutput(string message)
     {
         throw new Exception($"This will fail: {message}");

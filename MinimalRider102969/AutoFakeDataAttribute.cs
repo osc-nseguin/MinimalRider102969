@@ -1,16 +1,16 @@
 ﻿using AutoFixture;
-using AutoFixture.AutoMoq;
+using AutoFixture.AutoFakeItEasy;
 using AutoFixture.Xunit2;
 
 namespace MinimalRider102969;
 
-public class AutoMoqDataAttribute : AutoDataAttribute
+public class AutoFakeDataAttribute : AutoDataAttribute
 {
-    public AutoMoqDataAttribute()
+    public AutoFakeDataAttribute()
         : base(() =>
         {
             var fixture = new Fixture();
-            fixture.Customize(new AutoMoqCustomization());
+            fixture.Customize(new AutoFakeItEasyCustomization());
             return fixture;
         }) { }
 }
